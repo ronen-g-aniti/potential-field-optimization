@@ -115,9 +115,7 @@ where:
 The total force $\mathbf{F}$ acting on the robot is the sum of the attractive and repulsive forces:
 
 $$
-
 \mathbf{F} = \mathbf{F}_{att} + \mathbf{F}_{rep}
-
 $$
 
 ## Path Planning
@@ -125,9 +123,7 @@ $$
 The robot's movement is determined by the total force. At each time step, the robot's position is updated based on the force:
 
 $$
-
 \mathbf{q}_{new} = \mathbf{q} + \Delta t \cdot \mathbf{F}
-
 $$
 
 where $\Delta t$ is the time step.
@@ -137,9 +133,7 @@ where $\Delta t$ is the time step.
 To find the best gains $k_{att}$ and $k_{rep}$, we minimize a cost function, typically the Mean Squared Error (MSE) between the planned path and the desired path:
 
 $$
-
 \text{MSE} = \frac{1}{N} \sum_{i=1}^{N} |\mathbf{q}_{i} - \mathbf{q}_{goal}|^2
-
 $$
 
 where $N$ is the number of steps in the path.
