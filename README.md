@@ -91,11 +91,7 @@ where:
 
 The repulsive force $\mathbf{F}_{rep}$ pushes the robot away from obstacles. It is usually modeled to have an effect only within a certain distance $d_0$ from the obstacle:
 
-$$\mathbf{F}_{rep} = 
-\begin{cases} 
-k_{rep} \left( \frac{1}{\mathbf{q}} - \frac{1}{d_0} \right) \frac{1}{\mathbf{q}^2} \frac{\mathbf{q} - \mathbf{q}_{obs}}{|\mathbf{q} - \mathbf{q}_{obs}|} & \text{if } |\mathbf{q} - \mathbf{q}_{obs}| \leq d_0 \\ 
-0 & \text{if } |\mathbf{q} - \mathbf{q}_{obs}| > d_0 
-\end{cases}$$
+$$\mathbf{F}_{rep} = \begin{cases} k_{rep} \left( \frac{1}{\mathbf{q}} - \frac{1}{d_0} \right) \frac{1}{\mathbf{q}^2} \frac{\mathbf{q} - \mathbf{q}_{obs}}{|\mathbf{q} - \mathbf{q}_{obs}|} & \text{if } |\mathbf{q} - \mathbf{q}_{obs}| \leq d_0 \\ 0 & \text{if } |\mathbf{q} - \mathbf{q}_{obs}| > d_0 \end{cases}$$
 
 where:
 
