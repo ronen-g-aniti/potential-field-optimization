@@ -79,7 +79,7 @@ The `visualize_path` function provides a 3D visualization of the path planned by
 ### Attractive Force
 
 The attractive force $\mathbf{F}_{att}$ pulls the robot towards the goal. It is typically modeled as a linear function of the distance to the goal:
-$$ \mathbf{F}_{att} = k_{att} \cdot (\mathbf{q}_{goal} - \mathbf{q}) $$
+$$\mathbf{F}_{att} = k_{att} \cdot (\mathbf{q}_{goal} - \mathbf{q})$$
 
 where:
 
