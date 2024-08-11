@@ -79,7 +79,8 @@ The `visualize_path` function provides a 3D visualization of the path planned by
 ### Attractive Force
 
 The attractive force $\mathbf{F}_{att}$ pulls the robot towards the goal. It is typically modeled as a linear function of the distance to the goal:
-$$ \mathbf{F}_{att} = k_{att} \cdot (\mathbf{q}_{goal} - \mathbf{q}) $$
+
+$$\mathbf{F}_{att} = k_{att} \cdot (\mathbf{q}_{goal} - \mathbf{q})$$
 
 where:
 
@@ -93,8 +94,7 @@ The repulsive force $\mathbf{F}_{rep}$ pushes the robot away from obstacles. It 
 
 $$
 \mathbf{F}_{rep} =
-\begin{array}{ll}
-k_{rep} \left( \frac{1}{\mathbf{q}} - \frac{1}{d_0} \right) \frac{1}{\mathbf{q}^2} \frac{\mathbf{q} - \mathbf{q}_{obs}}{|\mathbf{q} - \mathbf{q}_{obs}|}, & \text{if } |\mathbf{q} - \mathbf{q}_{obs}| \leq d_0 \\
+\begin{array}{ll}k_{rep} \left( \frac{1}{\mathbf{q}} - \frac{1}{d_0} \right) \frac{1}{\mathbf{q}^2} \frac{\mathbf{q} - \mathbf{q}_{obs}}{|\mathbf{q} - \mathbf{q}_{obs}|}, & \text{if } |\mathbf{q} - \mathbf{q}_{obs}| \leq d_0 \\
 0, & \text{if } |\mathbf{q} - \mathbf{q}_{obs}| > d_0
 \end{array}
 $$
