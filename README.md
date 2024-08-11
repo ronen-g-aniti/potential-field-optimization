@@ -124,11 +124,11 @@ where $\Delta t$ is the time step.
 
 ## Optimization
 
-To find the best gains $k_{att}$ and $k_{rep}$, we minimize a cost function, typically the Mean Squared Error (MSE) between the planned path and the desired path:
+To find the best gains $k_{att}$ and $k_{rep}$, we minimize a cost function, typically the Mean Squared Error (MSE) which measures the average distance each path point is from obstacles. Invalid paths (which don't converge to the goal) are given an MSE of infinity, while valid paths average the distance of all path points to each path point's nearest obstacle:
 
-$$\text{MSE} = \frac{1}{N} \sum_{i=1}^{N} |\mathbf{q}_{i} - \mathbf{q}_{goal}|^2$$
+$$\text{MSE} = \frac{1}{N} \sum_{i=1}^{N} \min_{j} |\mathbf{q}_{i} - \mathbf{o}_{j}|^2$$
 
-where $N$ is the number of steps in the path.
+where $N$ is the number of steps in the path and $\mathbf{o}_{j}$ represents the position of the $j$-th obstacle.
 
 ## Skills Demonstrated
 
