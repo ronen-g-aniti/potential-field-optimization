@@ -1,10 +1,6 @@
 # Potential Field Path Planner
 
-This project implements a 3D potential field path planner for robotics applications. The planner navigates a robot from a start position to a goal position while avoiding obstacles using attractive and repulsive forces. This project showcases my engineering and programming skills and reflects my passion for robotics and learning.
-
-## Purpose
-
-The purpose of this project is to develop a potential field path planner that can efficiently navigate a robot in a 3D environment. The planner uses mathematical concepts to generate a path from a start position to a goal position while avoiding obstacles. This project is a learning exercise in robotics, path planning, and optimization.
+This project involves the design, build, testing, and optimization of a 3D potential field path planner for robotics applications. The planner navigates a robot from a start position to a goal position while avoiding obstacles using attractive and repulsive forces. This project showcases my engineering and programming skills and reflects my passion for robotics and learning.
 
 ## Features
 
